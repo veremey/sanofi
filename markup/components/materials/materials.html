@@ -1,0 +1,26 @@
+<div class="materials is-animated materials{{#if mod}}_{{mod}}{{/if}}">
+	{{#each list}}
+		<div class="material">
+			<div class="material__box material{{#if color}}_{{color}}{{/if}}">
+				<div class="material__text">
+					<h3 class="material__title">{{{title}}}</h3>
+					<ul class="material__list">
+						{{#each link}}
+							<li class="material__item">
+								<a href="#" class="material__link">{{this}}</a>
+							</li>
+						{{/each}}
+					</ul>
+					{{#if more}}
+						<a href="#" class="material__link material_more">{{{more}}}</a>
+					{{/if}}
+				</div>
+				<a href="#" class="material__pic">
+					<img src={{{pic}}} alt="picture" class="material__img">
+				</a>
+
+			</div>
+		</div>
+	{{/each}}
+
+</div>

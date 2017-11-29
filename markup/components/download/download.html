@@ -1,0 +1,30 @@
+
+<div class="download events_three">
+	{{#each item}}
+		<div class="download__item">
+			<div class="download__wrap download_{{#if color}}{{color}}{{/if}}">
+				<div class="download__top">
+				{{#if doc}}
+					{{Icon iconName='icon-doc' className='download__icon' iconWidth='60' iconHeight='74'}}
+				{{/if}}
+				{{#if pdf}}
+					{{Icon iconName='icon-pdf' className='download__icon' iconWidth='60' iconHeight='74'}}
+				{{/if}}
+				{{#if txt}}
+					{{Icon iconName='icon-txt' className='download__icon' iconWidth='60' iconHeight='74'}}
+				{{/if}}
+				{{#if ppt}}
+					{{Icon iconName='icon-txt' className='download__icon' iconWidth='60' iconHeight='74'}}
+				{{/if}}
+				</div>
+				<div class="download__bottom">
+					<p class="download__desc">{{{text}}}</p>
+					<a href="static/img/content/article/01.jpg" class="download__btn" download>Загрузить</a>
+				</div>
+			</div>
+		</div>
+	{{/each}}
+</div>
+
+
+

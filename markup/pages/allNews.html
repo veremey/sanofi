@@ -1,0 +1,68 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+  <head>
+    {{> head/head head.defaults}}
+  </head>
+
+  <body class="page is-animated">
+    %=symbols=%
+
+    <div class="preview">
+      <img src="static/img/content/article/starts-01.jpg" alt="preview__img" class="preview__bg">
+      <div class="page__wrapper">
+      <a href="#" class="preview__logo">
+        <img src="static/img/content/startscreen/sl-01-logo.png" alt="preview__logo" class="preview__icon">
+      </a>
+      <div class="preview__text">
+        <h2 class="preview__title">НОвости</h2>
+      </div>
+      </div>
+    </div>
+
+    <div class="page__wrapper">
+      <div class="page__back">
+        <a href="#" class="page__back-link ">
+          <img src="static/img/content/article/left-arrow.png" class="icon-back" alt="icon">
+        </a>
+       </div>
+       {{> aside/aside}}
+
+       <main class="main-page main-page_wide is-animated">
+
+        <section class="events is-animated">
+          <h3 class="title__section color-green">Новые проекты</h3>
+          {{> events/events events.touch}}
+        </section>
+
+        <section class="events is-animated">
+          <h3 class="title__section color-brown">Материалы</h3>
+          {{> download/download download.doc}}
+        </section>
+
+        <section class="events is-animated">
+          <h3 class="title__section color-navy">События</h3>
+          {{> events/events events.event}}
+        </section>
+
+        <section class="events is-animated">
+          <h3 class="title__section color-green">privivka.ru</h3>
+          {{> events/events events.touch}}
+        </section>
+
+        <section class="events is-animated">
+          <h3 class="title__section color-green">docsfera.ru</h3>
+          {{> events/events events.newsThree}}
+        </section>
+
+        <div class="page__info">
+          <a href="#" class="info__link icon-info"></a>
+        </div>
+      </main>
+
+    </div>
+
+    <script src="static/js/main%=hash=%%=min=%.js"></script>
+  </body>
+
+</html>

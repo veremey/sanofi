@@ -1,0 +1,51 @@
+
+<div class="events__item events{{#if mod}}_{{mod}}{{/if}}">
+	{{#each list}}
+		<div class="events__wrap events{{#if bg}}__{{bg}}{{/if}}">
+			<div class="events__box">
+				<a href="#" class="events__pic">
+					<img src={{url}} alt="picture" class="events__img">
+					{{#if topDate}}
+						<span class="top-date">
+							<span class="top-date_big">{{{topDate.num}}}</span>
+							<span class="top-date_mo">{{{topDate.mo}}}</span>
+						</span>
+					{{/if}}
+				</a>
+				<div class="events__text">
+					{{#if detailsTop}}
+						<div class="detail detail_top">
+							<div class="detail__item">
+								<img class="detail__pic" src="static/img/general/icon-clock.jpg" alt="time-icon">
+								<time class="events__time" datetime="2017-10-12" >{{detailsTop}}</time>
+							</div>
+							<div class="detail__item">
+								<img class="detail__pic" src="static/img/general/icon-eye.jpg" alt="watch-icon">
+								<p class="detail__desc">1040</p>
+							</div>
+						</div>
+					{{/if}}
+					<a href="#" class="title__events">{{{title}}}</a>
+					{{#if date}}
+						<p class="desc desc-limit">{{{desc}}}</p>
+					{{/if}}
+					{{#if date}}
+						<p class="events__time"  >{{{date}}}</p>
+					{{/if}}
+					{{#if details}}
+						<div class="detail">
+							<div class="detail__item">
+								<img class="detail__pic" src="static/img/general/icon-clock.jpg" alt="time-icon">
+								<time class="events__time" datetime="2017-10-12" >{{details}}</time>
+							</div>
+							<div class="detail__item">
+								<img class="detail__pic" src="static/img/general/icon-eye.jpg" alt="watch-icon">
+								<p class="detail__desc">1040</p>
+							</div>
+						</div>
+					{{/if}}
+				</div>
+			</div>
+		</div>
+	{{/each}}
+</div>

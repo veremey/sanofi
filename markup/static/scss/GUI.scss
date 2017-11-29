@@ -1,0 +1,22 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+
+
+.icon-info {
+	display: inline-block;
+	vertical-align: top;
+	@include bg($icon-info);
+	&:hover {
+		@include bg($icon-info-h);
+	}
+}
+
+
+
+// .icon-i {
+//   display: inline-block;
+//   @include bg($icon-i);
+//   width: 40px;
+//   height: 40px;
+//   fill: red;
+// }

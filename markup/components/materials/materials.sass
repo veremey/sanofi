@@ -1,0 +1,86 @@
+.materials
+	margin-top: 55px
+	margin-left: -20px
+	font-size: 0
+	&.materials_tall
+		.material__pic
+			height: 150px
+
+.material
+	display: inline-block
+	margin-left: 20px
+	margin-bottom: 40px
+	width: calc(33.33% - 20px)
+	&__box
+		display: flex
+		flex-direction: colunm
+		flex-wrap: wrap
+		height: 100%
+	&__text
+		width: 100%
+		padding: 35px
+		border: 1px solid $border
+	&__title
+		text-transform: uppercase
+		font-size: 35px
+		color: $blue
+		margin-bottom: 10px
+		+aa
+	&__list
+		font-size: 0
+		margin-bottom: 24px
+	&__item
+		display: block
+		margin-bottom: 10px
+	&__link
+		@extend .desc
+	&__pic
+		display: block
+		width: 100%
+		position: relative
+		height: 90px
+		overflow: hidden
+		cursor: pointer
+		&:hover
+			.material__img
+				transform: translate(-50%, -50%) scale(1.2)
+	&__img
+		+vcenter
+		min-width: 100%
+		min-height: 100%
+		+tr(1s)
+	&_more
+		display: inline-block
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			top: 100%
+			left: 0
+			width: 100%
+			height: 2px
+			background-color: $brown
+			+tr(.4s)
+		&:hover
+			&:after
+				width: 0
+	.material
+		&_green
+			.material
+				&__title
+					color: $green
+				&_more:after
+					background-color: $green
+		&_brown
+			.material
+				&__title
+					color: $brown
+				&_more:after
+					background-color: $brown
+		&_navy
+			.material
+				&__title
+					color: $navy
+				&_more:after
+					background-color: $navy
+

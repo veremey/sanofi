@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+  <head>
+    {{> head/head head.defaults}}
+  </head>
+
+  <body class="page is-animated">
+    %=symbols=%
+
+    <div class="preview ">
+      <img src="static/img/content/article/starts-01.jpg" alt="preview__img" class="preview__bg">
+      <div class="page__wrapper">
+      <a href="#" class="preview__logo">
+        <img src="static/img/content/startscreen/sl-01-logo.png" alt="preview__logo" class="preview__icon">
+      </a>
+      <div class="preview__text">
+        <h2 class="preview__title">руководство</h2>
+      </div>
+      </div>
+    </div>
+
+    <div class="page__wrapper">
+      <div class="page__back">
+        <a href="#" class="page__back-link ">
+          <img src="static/img/content/article/left-arrow.png" class="icon-back" alt="icon">
+        </a>
+       </div>
+       {{> aside/aside}}
+
+       <main class="main-page main-page_wide is-animated">
+
+        <section class="events is-animated">
+          <h3 class="title__section color-blue2">процессы</h3>
+          {{> download/download download.reports}}
+        </section>
+        <section class="events is-animated">
+          <h3 class="title__section color-fiolet">Полезные ссылки  </h3>
+          {{> download/download download.links}}
+        </section>
+        <section class="events is-animated">
+          <h3 class="title__section color-brown2">Шаблоны документов </h3>
+          {{> download/download download.shablon2}}
+        </section>
+
+        <section class="events is-animated">
+          <h3 class="title__section color-sea">SOP</h3>
+          {{> download/download download.sop}}
+        </section>
+
+      </main>
+
+    </div>
+
+    <script src="static/js/main%=hash=%%=min=%.js"></script>
+  </body>
+
+</html>

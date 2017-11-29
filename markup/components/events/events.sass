@@ -1,0 +1,94 @@
+.events
+	margin-bottom: 45px
+	&__wrap
+		margin-left: 25px
+		font-size: 0
+	&__item
+		margin-left: -25px
+	&__box
+		font-size: 0
+		border-right: 1px solid $n
+	&__pic
+		display: block
+		background-color: #ccc
+		position: relative
+		height: 200px
+		overflow: hidden
+	&__img
+		+vcenter
+		min-width: 100%
+	&__text
+		padding: 20px
+		border: 1px solid $border
+	&__time
+		font-size: 10px
+		color: #6e6e6e
+		// text-transform: uppercase
+		+aa
+	.desc
+		margin-bottom: 20px
+	.slick-list
+		// margin-left: -25px
+		padding-right: 2px
+	.slick-prev
+		left: -40px
+		width: 18px
+		height: 31px
+		&:before
+			content: ''
+			display: inline-block
+			width: 18px
+			height: 31px
+			background-image: url("../img/minified-svg/icon-arrow-right.svg")
+			+rotate(180)
+	.slick-next
+		right: -40px
+		width: 18px
+		height: 31px
+		&:before
+			content: ''
+			display: inline-block
+			width: 18px
+			height: 31px
+			background-image: url("../img/minified-svg/icon-arrow-right.svg")
+	.top-date
+		+coverdiv
+		padding: 20px 22px
+		box-sizing: border-box
+		background-color: rgba(78, 78, 118, .3)
+		&_big
+			color: #fff
+			font-size: 80px
+			line-height: 1
+			text-transform: uppercase
+			+aa
+		&_mo
+			display: block
+			font-size: 34px
+			line-height: 1
+			text-transform: uppercase
+			color: #fff
+			+aa
+
+.detail
+	display: flex
+	align-items: center
+	&__item
+		display: flex
+		align-items: center
+		vertical-align: top
+		margin-right: 20px
+		white-space: nowrap
+	&__pic
+		display: inline-block
+		vertical-align: top
+		margin-right: 5px
+	&__desc
+		display: inline-block
+		margin: 0
+		font-size: 10px
+		text-transform: uppercase
+		color: #6e6e6e
+		+aa
+	&.detail_top
+		margin-bottom: 15px

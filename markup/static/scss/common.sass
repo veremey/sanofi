@@ -1,0 +1,247 @@
+// Common styles of the project
+
+html
+	+selection
+		background: rgba(0, 0, 0, .2)
+		color: #fff
+
+html, body
+	height: 100%
+	background-color: #FFF
+	box-sizing: border-box
+
+body
+	color: #000
+	+aa
+
+.page__wrapper
+	width: 1250px
+	min-width: 1170px
+	padding: 0 40px
+	min-height: 100%
+	margin: 0 auto
+.page__info
+	display: flex
+	justify-content: flex-end
+	margin-bottom: 24px
+
+.page__back
+	height: 50px
+	&-link
+		display: inline-block
+		vertical-align: top
+		height: 50px
+		font-size: 0
+		&:hover
+			.icon-back
+				+trx(-10px)
+.icon-back
+	display: inline-block
+	margin-top: 20px
+	+tr(.4s)
+
+.preview
+	position: relative
+	width: 100%
+	overflow: hidden
+	height: 200px
+	&__bg
+		+vcenter
+		width: 100%
+		min-height: 100%
+	&__logo
+		position: relative
+		display: flex
+		align-items: center
+		height: 95px
+		width: 318px
+		z-index: 2
+		+tr(.4s)
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			bottom: 0
+			right: 0
+			width: 5000px
+			background-color: #FFF
+			z-index: -1
+		&:hover
+			opacity: .9
+	&__icon
+		display: inline-block
+		vertical-align: top
+		max-width: 96%
+		max-height: 96%
+	&__text
+		display: flex
+		align-items: center
+		width: 700px
+		justify-content: center
+		// flex-grow: 1
+		color: #fff
+		text-align: center
+	&__title
+		margin: 0
+		font-size: 60px
+		letter-spacing: .04em
+		text-transform: uppercase
+		+ar
+	.page__wrapper
+		position: relative
+		display: flex
+		align-items: center
+
+.main-page
+	display: inline-block
+	vertical-align: top
+	width: 700px
+	margin-bottom: 80px
+	&_wide
+		width: 875px
+.main
+	&__desc
+		margin-bottom: .5em
+		font-size: 16px
+		line-height: 22px
+		color: #000
+		+aa
+		// font-weight: 600
+		b
+			+ad
+			font-weight: 600
+	&__details
+		position: relative
+		margin: 35px auto
+		font-size: 0
+	&__img
+		display: inline-block
+		border-length: auto
+		max-width: 100%
+	&__title
+		text-transform: uppercase
+		font-size: 25px
+		line-height: 35px
+		margin: 0 0 20px 0
+		color: $blue
+		+aa
+	&__subtitle
+		font-size: 16px
+		color: #000
+		+ad
+		font-weight: bold
+	&__list
+		font-size: 0
+		padding-left: 20px
+	&__item
+		list-style-type: decimal
+		font-size: 16px
+		line-height: 22px
+		color: #000
+		+aa
+
+
+* html .page__wrapper
+	height: 100%
+
+a
+	text-decoration: none
+	outline: none
+
+ul
+	padding: 0
+	margin: 0
+
+
+h1, h2, h3, h4, h5, h6
+	margin: 0 0 .8em
+	font-weight: normal
+	line-height: 1.1
+
+h1
+	font-size: 2em
+h2
+	font-size: 1.8em
+h3
+	font-size: 1.6em
+h4
+	font-size: 1.5em
+h5
+	font-size: 1.4em
+h6
+	font-size: 1.3em
+
+b, strong
+	font-weight: normal
+
+p
+	margin: 0
+
+
+.title
+	&__l
+		font-size: 35px
+		line-height: 45px
+		text-transform: uppercase
+		color: #0364B6
+		font-weight: bold
+		text-align: center
+		margin: 0
+		+aa
+	&__events
+		font-size: 15px
+		line-height: 20px
+		margin: 0
+		margin-bottom: 20px
+		color: $navy
+		+aa
+	&__section
+		text-transform: uppercase
+		font-size: 35px
+		color: $green
+		+aa
+
+a.title__events
+	display: block
+	font-size: 15px
+	line-height: 20px
+	margin: 0
+	margin-bottom: 20px
+	color: $navy
+	+tr(.4s)
+	&:hover
+		opacity: .8
+
+.desc
+	font-size: 12px
+	line-height: 20px
+	color: $text
+	+aa
+	&-limit
+		+limitLines(4, 4, #fff, #fff, 1.66)
+
+.color
+	&-brown
+		color: $brown
+	&-green
+		color: $green
+	&-navy
+		color: $navy
+	&-bronza
+		color: $bronza
+	&-green1
+		color: $green1
+	&-green2
+		color: $green2
+	&-blue1
+		color: $blue1
+	&-blue2
+		color: $blue2
+	&-fiolet
+		color: $fiolet
+	&-brown2
+		color: $brown2
+	&-sea
+		color: $sea
+
+

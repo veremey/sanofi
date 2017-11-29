@@ -1,0 +1,55 @@
+
+.nav
+	font-size: 0
+	display: flex
+	justify-content: space-between
+	&__item
+		display: flex
+		width: 25%
+		height: 100px
+	&__link
+		display: flex
+		flex-grow: 1
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		border-top: 4px solid #ccc
+		border-bottom: 1px solid #ccc
+		border-left: 1px solid #ccc
+		padding: 18px 5px
+		+aa
+		&:hover
+			.nav__title
+				color: #fff
+			.nav-icon
+				fill: #fff
+		&.mod-fiolet
+			border-color: #9A98BB
+			background-color: #B3B3D7
+		&.mod-green
+			border-color: #BBC8AD
+			background-color: #D9E5CA
+
+		&.mod-beige
+			border-color: #CDC5BF
+			background-color: #F2EBE7
+		&.mod-fi
+			border-color: #9C86B0
+			background-color: #B79FCA
+
+	&__title
+		margin-top: auto
+		font-size: 15px
+		text-transform: uppercase
+		letter-spacing: .01em
+		color: #000
+		+tr(.2s)
+	&-icon
+		display: inline-block
+		height: 30px
+		min-height: 30px
+		vertical-align: top
+		margin-bottom: 18px
+		fill: #32323C
+		+tr(.2s)
+

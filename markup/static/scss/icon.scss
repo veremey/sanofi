@@ -1,0 +1,10 @@
+.icon-i {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  @include bg-svg($icon-i);
+}
+
+// @include bg-svg($icon-locate);
+// @include bg-svg($icon-miting);
