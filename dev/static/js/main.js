@@ -199,6 +199,8 @@ $(document).ready(function () {
 
 });
 
+
+
 $(document).ready(function () {
 	svg4everybody();
   $('.start-splin').slick({
@@ -232,8 +234,6 @@ $(function() {
     });
   $('[href=#]').click(function(){return false});
 });
-
-
 
 
 

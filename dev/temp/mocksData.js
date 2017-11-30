@@ -570,13 +570,6 @@
 	}
 },
 
-'head': {
-    defaults: {
-        title: 'Sanofi',
-        useSocialMetaTags: false
-    }
-},
-
 'materials': {
 	low: {
 		mod: 'low',
@@ -623,6 +616,13 @@
 },
 
 'startscreen': {},
+
+'head': {
+    defaults: {
+        title: 'Sanofi',
+        useSocialMetaTags: false
+    }
+},
 
 'startslider': {},
 
