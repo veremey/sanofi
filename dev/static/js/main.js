@@ -152,8 +152,8 @@ $(function () {
 });
 
 $(document).ready(function () {
-	$('.aside__item').on('click', function () {
-		$(this).toggleClass('is-active');
+	$('.aside__title').on('click', function () {
+		$(this).parent('.aside__item').toggleClass('is-active');
 	});
 });
 
@@ -207,6 +207,7 @@ $(document).ready(function () {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    pauseOnFocus: false,
     autoplay: true,
     autoplaySpeed: 2000
   });

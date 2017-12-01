@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-	$('.aside__item').on('click', function () {
-		$(this).toggleClass('is-active');
+	$('.aside__title').on('click', function () {
+		$(this).parent('.aside__item').toggleClass('is-active');
 	});
 });
