@@ -1,11 +1,14 @@
 
 $(document).ready(function () {
 	svg4everybody();
+
+
   $('.start-splin').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     pauseOnFocus: false,
+    pauseOnHover:false,
     autoplay: true,
     autoplaySpeed: 2000
   });
