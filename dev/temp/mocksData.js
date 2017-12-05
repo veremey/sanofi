@@ -615,15 +615,6 @@
 	}
 },
 
-'startscreen': {},
-
-'head': {
-    defaults: {
-        title: 'Sanofi',
-        useSocialMetaTags: false
-    }
-},
-
 'startslider': {},
 
 /* Module data structure */
@@ -641,6 +632,15 @@ _template: {
         title: 'Hello world',
         age: 10,
         button: false
+    }
+},
+
+'startscreen': {},
+
+'head': {
+    defaults: {
+        title: 'Sanofi',
+        useSocialMetaTags: false
     }
 },
 
