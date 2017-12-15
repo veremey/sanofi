@@ -1,5 +1,3 @@
-'aside': {},
-
 'download': {
 	doc: {
 		item: [{
@@ -570,6 +568,13 @@
 	}
 },
 
+'head': {
+    defaults: {
+        title: 'Sanofi',
+        useSocialMetaTags: false
+    }
+},
+
 'materials': {
 	low: {
 		mod: 'low',
@@ -615,6 +620,8 @@
 	}
 },
 
+'startscreen': {},
+
 'startslider': {},
 
 /* Module data structure */
@@ -635,14 +642,7 @@ _template: {
     }
 },
 
-'startscreen': {},
-
-'head': {
-    defaults: {
-        title: 'Sanofi',
-        useSocialMetaTags: false
-    }
-},
+'aside': {},
 
 __iconsData: {
     
@@ -695,6 +695,9 @@ __pages: [{
                 name: 'allNews',
                 href: 'allNews.html'
              },{
+                name: 'componrent-events',
+                href: 'componrent-events.html'
+             },{
                 name: 'guide',
                 href: 'guide.html'
              },{
@@ -712,6 +715,9 @@ __pages: [{
              },{
                 name: 'news',
                 href: 'news.html'
+             },{
+                name: 'one_material',
+                href: 'one_material.html'
              },{
                 name: 'page-list',
                 href: 'page-list.html'

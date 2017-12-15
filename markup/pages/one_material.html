@@ -1,0 +1,185 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sanofi</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=1250, minimal-ui" id="testViewport">
+
+        <meta content="telephone=no" name="format-detection">
+        <link rel="icon" type="image/png" href="favicon.png">
+    </head>
+
+    <body class="page is-animated">
+
+        <div class="page__wrapper">
+            <style type="text/css">
+                /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+                html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent;text-decoration:none;outline:none}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:400}dfn{font-style:italic}mark{background:#ff0;color:#000}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}blockquote,figure,p{margin:0}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}fieldset{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:0 0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}legend{border:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}legend,td,th{padding:0}*{padding: 0;margim: 0;}
+                .desc, .material__link {
+                  font-size: 12px;
+                  line-height: 20px;
+                  color: #818181;
+                  font-family: 'avg45_c', Arial, sans-serif;
+                }
+                .events .desc, .events .material__link {
+                  margin-bottom: 20px;
+                }
+                .materials {
+                  margin-top: 55px;
+                  margin-left: -20px;
+                  font-size: 0;
+                }
+
+                .materials.materials_tall .material__pic {
+                  height: 150px;
+                }
+
+                .material {
+                  display: inline-block;
+                  margin-left: 20px;
+                  margin-bottom: 40px;
+                  width: calc(100% - 20px);
+                }
+
+                .material__box {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: vertical;
+                  -webkit-box-direction: normal;
+                      -ms-flex-direction: colunm;
+                          flex-direction: colunm;
+                  -ms-flex-wrap: wrap;
+                      flex-wrap: wrap;
+                  height: 100%;
+                }
+
+                .material__text {
+                  width: 100%;
+                  padding: 35px;
+                  border: 1px solid #E9E9E9;
+                }
+
+                .material__title {
+                  text-transform: uppercase;
+                  font-size: 35px;
+                  color: #545494;
+                  margin-bottom: 10px;
+                  font-family: 'avg45_c', Arial, sans-serif;
+                }
+
+                .material__list {
+                  font-size: 0;
+                  margin-bottom: 24px;
+                }
+
+                .material__item {
+                  display: block;
+                  margin-bottom: 10px;
+                }
+                .material__pic {
+                  display: block;
+                  width: 100%;
+                  position: relative;
+                  height: 90px;
+                  overflow: hidden;
+                  cursor: pointer;
+                }
+
+                .material__pic:hover .material__img {
+                  -webkit-transform: translate(-50%, -50%) scale(1.2);
+                          transform: translate(-50%, -50%) scale(1.2);
+                }
+
+                .material__img {
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  -webkit-transform: translate(-50%, -50%);
+                          transform: translate(-50%, -50%);
+                  min-width: 100%;
+                  min-height: 100%;
+                  -webkit-transition: 1s;
+                  transition: 1s;
+                }
+
+                .material_more {
+                  display: inline-block;
+                  position: relative;
+                }
+
+                .material_more:after {
+                  content: '';
+                  position: absolute;
+                  top: 100%;
+                  left: 0;
+                  width: 100%;
+                  height: 2px;
+                  background-color: #B3A170;
+                  -webkit-transition: 0.4s;
+                  transition: 0.4s;
+                }
+
+                .material_more:hover:after {
+                  width: 0;
+                }
+
+                .material .material_green .material__title {
+                  color: #ADB13D;
+                }
+
+                .material .material_green .material_more:after {
+                  background-color: #ADB13D;
+                }
+
+                .material .material_brown .material__title {
+                  color: #B3A170;
+                }
+
+                .material .material_brown .material_more:after {
+                  background-color: #B3A170;
+                }
+
+                .material .material_navy .material__title {
+                  color: #46468C;
+                }
+
+                .material .material_navy .material_more:after {
+                  background-color: #46468C;
+                }
+
+            </style>
+
+            <div class="material">
+                <div class="material__box material{{#if color}}_{{color}}{{/if}}">
+                    <div class="material__text">
+                        <h3 class="material__title">О НАС</h3>
+                        <ul class="material__list">
+
+                            <li class="material__item">
+                                <a href="#" class="material__link">Структура отдела</a>
+                            </li>
+                            <li class="material__item">
+                                <a href="#" class="material__link">Структура отдела</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="material__link material_more">more}}}</a>
+
+                    </div>
+                    <a href="#" class="material__pic">
+                        <img src='static/img/content/low/02.jpg' alt="picture" class="material__img">
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- <script src="static/js/main%=hash=%%=min=%.js"></script> -->
+    </body>
+
+</html>
