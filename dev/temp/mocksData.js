@@ -1,3 +1,5 @@
+'aside': {},
+
 'download': {
 	doc: {
 		item: [{
@@ -642,8 +644,6 @@ _template: {
     }
 },
 
-'aside': {},
-
 __iconsData: {
     
         'icon-arrow-right': {
@@ -697,6 +697,15 @@ __pages: [{
              },{
                 name: 'componrent-events',
                 href: 'componrent-events.html'
+             },{
+                name: 'css-about',
+                href: 'css-about.html'
+             },{
+                name: 'css-all-news',
+                href: 'css-all-news.html'
+             },{
+                name: 'css-index',
+                href: 'css-index.html'
              },{
                 name: 'guide',
                 href: 'guide.html'
