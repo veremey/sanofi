@@ -248,6 +248,13 @@
 
 ,
 
+'head': {
+    defaults: {
+        title: 'Sanofi',
+        useSocialMetaTags: false
+    }
+},
+
 'events': {
 	simple: {
 		mod: 'four',
@@ -570,13 +577,6 @@
 	}
 },
 
-'head': {
-    defaults: {
-        title: 'Sanofi',
-        useSocialMetaTags: false
-    }
-},
-
 'materials': {
 	low: {
 		mod: 'low',
@@ -704,8 +704,20 @@ __pages: [{
                 name: 'css-all-news',
                 href: 'css-all-news.html'
              },{
+                name: 'css-guide',
+                href: 'css-guide.html'
+             },{
                 name: 'css-index',
                 href: 'css-index.html'
+             },{
+                name: 'css-materials',
+                href: 'css-materials.html'
+             },{
+                name: 'css-news',
+                href: 'css-news.html'
+             },{
+                name: 'css-privivki',
+                href: 'css-privivki.html'
              },{
                 name: 'guide',
                 href: 'guide.html'

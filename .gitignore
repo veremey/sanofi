@@ -3,6 +3,10 @@
 /grunt/.sass-cache
 /static/jade/modules/tpl
 
+builds
+*.7z
+*.zip
+
 # Numerous always-ignore extensions
 *.diff
 *.err
